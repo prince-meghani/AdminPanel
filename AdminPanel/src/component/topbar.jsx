@@ -1,11 +1,10 @@
-// src/admin/components/Topbar.jsx
 import React from 'react';
 import { Bell, Search, User } from 'lucide-react';
 import { Dropdown, Form, InputGroup } from 'react-bootstrap';
 
 const Topbar = () => {
   return (
-    <div className="bg-dark d-flex justify-content-between align-items-center p-3 border-bottom shadow-sm">
+    <div className=" d-flex justify-content-between align-items-center p-3 border-bottom shadow-sm">
       {/* Search Bar */}
       <InputGroup style={{ maxWidth: '300px' }}>
         <InputGroup.Text className="bg-white border-end-0">
@@ -16,7 +15,7 @@ const Topbar = () => {
 
       {/* Right Side */}
       <div className="d-flex align-items-center gap-3">
-        <Bell size={20} color="light" />
+        <Bell size={20} />
         <Dropdown align="end">
           <Dropdown.Toggle
             variant="light"
